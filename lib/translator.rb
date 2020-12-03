@@ -35,6 +35,7 @@ end
 def get_japanese_emoticon (file_path, character)
   
 translation_hash = load_library(file_path)
+word = ""
 message = ""
 translation = {}
 translation_2 = []
@@ -46,10 +47,17 @@ translation_hash.each {|key,symbol|
      translation.map {|symbol,emoticon|
      translation_2 << emoticon
      }
-     message = translation_2[1]
+     word = translation_2[1]
     end
   }
 }
+if word == ""
+  message = "Sorry, that emoticon was not found"
+else
+  message = word
+end
+return message
+end
 
 
   binding.pry 
