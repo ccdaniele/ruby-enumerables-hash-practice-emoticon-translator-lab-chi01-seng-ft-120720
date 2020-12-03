@@ -45,6 +45,7 @@ translation_hash.each {|key,symbol|
      translation << symbol
      translation.map {|symbol,emoticon|
       translation_2 << emoticon
+     }
     end
   }
 }
