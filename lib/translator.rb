@@ -43,6 +43,7 @@ translation_hash.each {|key,symbol|
     if emoticon == character
      translation = symbol.reject {|inner_symbol, emoticon|
         emoticon == character
+        binding.pry
       }
     end
   }
