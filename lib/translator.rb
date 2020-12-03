@@ -44,7 +44,7 @@ translation_hash.each {|key,symbol|
     if emoticon == character
      translation << symbol
      translation.map {|symbol,emoticon|
-      translation_2 << emoticon
+     binding.pry
      }
     end
   }
