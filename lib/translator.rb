@@ -36,13 +36,13 @@ def get_japanese_emoticon (file_path, character)
   
 translation_hash = load_library(file_path)
 
-translation = []
+translation = {}
 translation_2 = []
 #binding.pry
 translation_hash.each {|key,symbol|
   symbol.each {|inner_symbol, emoticon|
     if emoticon == character
-     translation << symbol
+     translation = symbol
      translation.map {|symbol,emoticon|
      binding.pry
      }
