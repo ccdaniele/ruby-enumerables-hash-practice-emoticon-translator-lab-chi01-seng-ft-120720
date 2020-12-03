@@ -57,7 +57,6 @@ else
   message = word
 end
 return message
-end
 
 
   binding.pry 
