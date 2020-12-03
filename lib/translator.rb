@@ -41,7 +41,7 @@ translation = ""
 translation_hash.each {|key,symbol|
   symbol.each {|inner_symbol, emoticon|
     if emoticon == character
-     translation = symbol.reject {|inner_symbol, emoticon|
+     translation = symbol.select {|inner_symbol, emoticon|
         emoticon == character
         binding.pry
       }
