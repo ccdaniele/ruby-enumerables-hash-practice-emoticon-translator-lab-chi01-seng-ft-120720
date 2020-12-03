@@ -46,9 +46,12 @@ translation_hash.each {|key,symbol|
      translation.map {|symbol,emoticon|
      translation_2 << emoticon
      }
+     message = 
     end
   }
 }
+
+
   binding.pry 
    
 end
