@@ -35,7 +35,7 @@ end
 def get_japanese_emoticon (file_path, character)
   
 translation_hash = load_library(file_path)
-
+message = ""
 translation = {}
 translation_2 = []
 #binding.pry
